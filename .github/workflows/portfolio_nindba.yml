@@ -27,12 +27,13 @@ jobs:
           npm run build --if-present
           #npm run test --if-present
         working-directory: .
-
+      - name: Archive
+        run: zip portfolio.zip ./*
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
           name: node-app
-          path: .
+          path: ./portfolio.zip
 
   deploy:
     runs-on: ubuntu-latest
@@ -46,7 +47,8 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: node-app
-
+      - name: unzip
+        run: unzip portfolio.zip
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
