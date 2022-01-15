@@ -1,0 +1,14 @@
+<div class="topper" [ngClass]="active">
+    <div class="wrapper">
+        <div class="left">
+            <a class="logo" [routerLink]="['']">Portfolio.</a>  <!--{{route.url|slice :1}}-->
+        </div>
+        <div class="right">
+            <div class="menu" (click)="onMenu()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </div>
+</div>

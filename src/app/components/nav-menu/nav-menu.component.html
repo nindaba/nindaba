@@ -1,0 +1,22 @@
+<div class="nav-menu {{active}}" >
+    <img src="assets/profile.png">
+    <h3>Nindaba Arthur</h3>
+    <ul>
+        <li>
+            <mat-icon>home</mat-icon>
+            <a [routerLink]="['intro']" (click)="desactive()">Home</a>
+        </li>
+        <li>
+            <mat-icon>laptop</mat-icon>
+            <a [routerLink]="['projects']" (click)="desactive()">Projects</a>
+        </li>
+        <li>
+            <mat-icon>article</mat-icon>
+            <a [routerLink]="['resume']" (click)="desactive()">Resume</a>
+        </li>
+        <li>
+            <mat-icon>contact_mail</mat-icon>
+            <a [routerLink]="['contacts']" (click)="desactive()">Contacts</a>
+        </li>
+    </ul>
+</div>

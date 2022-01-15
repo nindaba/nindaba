@@ -1,0 +1,61 @@
+<div class="resume">
+    <div class="skills">
+        <div class="skill-set">
+            <h3>Back-end Skills</h3>
+            <ul>
+                <li *ngFor="let skill of skills.back">
+                    <img [src]="skill.image">
+                    {{skill.name}}
+                </li>
+            </ul>
+        </div>
+        <div class="skill-set">
+            <h3>Front-end Skills</h3>
+            <ul>
+                <li *ngFor="let skill of skills.front">
+                    <img [src]="skill.image">
+                    {{skill.name}}
+                </li>
+            </ul>
+        </div>
+        <div class="skill-set">
+            <h3>Other skills</h3>
+            <ul>
+                <li *ngFor="let skill of skills.other">
+                    <img [src]="skill.image">
+                    {{skill.name}}
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li>
+                <ul>
+                    
+                    <h3>Junior Java Developer</h3>
+                    Hotel Icizanye, Muyinga Oct 2020 - Jan 2021
+                    <li>Designed, developed, Hotel management application
+                    <li>improved code quality, maintainability, and scalability.</li>
+                    <li>Transferred all the data of the previous systems to a new normalized Databases</li>
+                    <li>Identified integration issues and recommended corrective resolutions.</li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <h3>Junior Java Developer</h3>
+                    Green Hills Hotel, Muyinga Nov 2019 - Jan 2021 
+                    <li>Designed, developed, Hotel management application
+                    <li>Improved code quality, maintainability, and scalability.</li>
+                    <li>Transferred all the data of the previous systems to a new normalized Databases.</li>
+                    <li>Achieved design and development objectives by collaborating with in-office and remote teams</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="education">
+        <h2>Education</h2>
+        Bachelor's Computer Eng at Vistular University
+    </div>
+</div>

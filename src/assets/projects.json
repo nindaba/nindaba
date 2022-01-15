@@ -1,0 +1,27 @@
+[
+    {
+        "title": "This Protfolio",
+        "image":"assets/html_css.png",
+        "location":"https://github.com/nindaba/nindaba/tree/portfolio",
+        "description": "Don't think alot about it, the project is this portfolio you are browsing"
+    },
+    {
+        "title": "Restorant Front end",
+        "image":"assets/angular_rxjs_ngrx.png",
+        "hosted": "http://restorant.azurewebsites.net/",
+        "location":"https://github.com/nindaba/Restorant/tree/restorant-ui",
+        "description": "This is a reactive angular project which fetches realtime data with help of ngRx to mentain state and ngx-charts to display the anlysed data"
+    },
+    {
+        "title": "Restorant Back end",
+        "image":"assets/spring-boot.png",
+        "location":"https://github.com/nindaba/nindaba/tree/portfolio",
+        "description": "This project contains five services and running database on mongoDb, message broker on kafka and cloud on Netflix Eureka"
+    },
+    {
+        "title": "Wages Calculator",
+        "image":"assets/spring-wage.png",
+        "location":"https://github.com/nindaba/commission",
+        "description": "This is a simple project which reads transactions from a csv and wages fee csv and calculates the wages,It logs each REST CALL result in mongoDb uses spring boot, junit, mongoDb and docker"
+    }
+]

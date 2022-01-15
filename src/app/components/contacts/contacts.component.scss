@@ -1,0 +1,83 @@
+@import "../../../styles.scss";
+.contacts{
+    height: calc(100vh - 70px);
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    // background: url("../../../assets/download.jfif");
+    // // background-size: inherit;
+    // background-size: contain;
+    // background-position-y: top;
+    // background-repeat: no-repeat;
+
+    .back{
+        display: inherit;
+        flex-direction: column;
+    }
+    .contact-container{
+        // flex: .5;
+        width: 50%;
+        display: inherit;
+        flex-direction: column;
+        background-color: white;
+        padding: 1em;
+        opacity: .99;
+        border-radius: 1em;
+        h2{
+            color: $mainColor;
+        }
+        *{
+            margin: .5em 0;
+        }
+        input{
+            height: 1.5em;
+        }
+        form{
+            display: inherit;
+            flex-direction: inherit;
+            input, textarea,input:focus, textarea:focus{
+                border: none;
+                outline-style: none;
+                border-radius: 5px;
+                background-color: rgb(231, 231, 231);
+                padding: 5px;
+                color: rgb(34, 34, 34);
+                scrollbar-width: 0;
+                font-family: inherit;
+            }
+            button{
+                display: inherit;
+                align-items: center;
+                width: 150px;
+                height: 2em;
+                background-color: $mainColor;
+                color: white;
+            }
+        }
+    }
+    .social{
+        display: inherit;
+        flex-direction: row;
+        // flex-wrap: wrap;
+        position: absolute;
+        bottom: 5%;
+        span{
+            display: inherit;
+            align-items: center;
+            padding: 0 1em;
+            font-size: .8em;
+            img{
+                height: 1.5em;
+                width: 1.5em;
+            }
+            a{
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+        
+    }
+}
